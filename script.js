@@ -10,7 +10,7 @@ const p = document.createElement('p');
 let attempt = 10;
 let guesses = [];
 let randNum = parseInt(Math.random() * 100 + 1);
-console.log(randNum);
+// console.log(randNum);
 
 let playGame = true;
 
@@ -50,7 +50,7 @@ function checkValidity(guess) {
 }
 function compairNumb(guess) {
     if (guess === randNum) {
-        displayMessage('You Gussed Correct!!')
+        displayMessage('You Guessed Correct!!')
         endGame()
     }
     if (guess < randNum) {
