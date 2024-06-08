@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #ACE1AF;
+
+        }
+        .User{
+            height: auto;
+            width: 55%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            padding: 10%;
+            background-color: #BFF6C3;
+            display: flexbox;
+            border-radius: 10px;
+            border: 5px solid #ffffff;
+
+        }
+        form {
+            color: #040D12;
+            font-size: medium;
+        }
+        .result{
+
+        }
+        input{
+            height:25px;
+        }
+        button{
+            height: 25px;
+        }
+
+
+    </style>
+    <div class="User">
+        <h1>Whats the Number??</h1>
+        <form>
+        <p>Enter your Guess anywhere from 1 to 100.</p>
+        <input type="text" id="guess" class="guess">
+        <input type="submit" id="submit" value="Submit guess" class="guessSubmit">
+    </form>
+    <div class="result">
+            <p >Previous Guesses: <span id="guesses"></span></p>
+            <p >Guesses Remaining: <span id="leftGuess">10</span></p>
+            <p id="result"></p>
+            
+    </div>
+    </div>
+</body>
+<script src="script.js">
+  
+</script>
+</html>
